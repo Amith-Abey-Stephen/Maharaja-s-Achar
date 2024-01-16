@@ -8,20 +8,79 @@ html,body{
     height: 30px;
     width: auto;
 }
-
+.headin{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+    
+}
 .headin img{
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 250px;
+}
+#dialoge{
+    height: 80px;
+    width: 200px;
+}
+
+nav{
+    align-items: center;
+    /* margin-top: 0px; Adjust the margin from the top */
+    /* padding-top: 400px; */
 }
 
 
 a{
+    padding: 8px 16px;
+    /* background-color: rgb(192, 192, 192); */
     text-decoration: none;
-    color: brown;
+    color: rgb(28, 27, 27);
     font-size: 20px;
+    
 }
 
-backimg{
-    background-image:url(/images/bg-img1.jpg);
-    height: 500px;
-    width: 800px;
+a:hover{
+    padding: 8px 16px;
+    background-color: rgb(192, 192, 192);
+    text-decoration: none;
+    color: rgb(28, 27, 27);
+    font-size: 20px;
+    
 }
+
+.backimg{
+    background:url(/images/bg-img1.jpg);
+    background-repeat: no-repeat;
+    height: 1080px;
+    width: 100vw;
+    /* background-color: blue; */
+}
+
+#Logo-white{
+    height: 260px;
+    width: 380px;
+    margin-left: 35%;
+    margin-top: 40px;
+}
+
+
+.content{
+    text-align: center;
+}
+.box{
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+}
+
+.imgbox{
+}
+.content input{
+    padding: 10px 50px;
+    background-color: rgb(30, 67, 41);
+    border-radius: 100px;
+}
+
+
