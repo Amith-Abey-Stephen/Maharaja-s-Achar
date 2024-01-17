@@ -65,22 +65,30 @@ a:hover{
     margin-top: 40px;
 }
 
-
 .content{
+    background-color: rgb(212, 228, 184);
+}
+
+.product{
     text-align: center;
+    display: flex;
+    gap: 40px;
 }
 .box{
     height: 400px;
     width: 300px;
-    background-color: aqua;
+    background-color: rgb(212, 228, 184);
 }
 
-.imgbox{
+.imgbox img{
+    height: 380px;
+    width: 300px;
 }
-.content input{
+input{
     padding: 10px 50px;
     background-color: rgb(30, 67, 41);
     border-radius: 100px;
+    
 }
 
 
