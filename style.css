@@ -176,3 +176,9 @@ a .shop {
     color: rgb(30, 67, 41);
 }
 
+
+.home-made{
+    background-color: white;
+    background: linear-gradient(-70deg,rgb(158, 186, 82) 50%,rgb(212, 228, 184) 50% );
+    /* height: 201vh; */
+}
