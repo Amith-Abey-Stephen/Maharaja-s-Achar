@@ -156,10 +156,13 @@ a .shop {
 
 
 .home-made{
-    background: linear-gradient(-70deg,rgb(158, 186, 82) 50%,rgb(212, 228, 184) 50% );
+    background: linear-gradient(-70deg,rgba(208,205,117,0.90) 50%,rgb(212, 228, 184) 50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: auto;
+    height: 700px;
 }
 
 .home-img{
@@ -168,19 +171,28 @@ a .shop {
     display: flex;
     justify-content: flex-end; /* Align content to the right */
     margin-right: 20px;
-    margin-top: 20px;
+    justify-content: center;
     align-items: center;
 }
 .home-text{
     flex: 1;
     padding: 20px;
+    margin: 80px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
+.home-text p{font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    word-spacing: 5px;
+  
+}
 .home-text h1{
     font-family: 'Quicksand', sans-serif;
     font-size: 48px;
+    
 }
- .bg{
+ /* bg-image of home-made section*/.bg{
  background-color: aliceblue;
  height: 420px;
  width: 520px;
@@ -198,4 +210,20 @@ a .shop {
     width: 500px;
     border-radius: 20px;
     
+}
+
+.shop1{
+    padding: 7px 5px;
+    background-color: rgb(44, 56, 34);
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+    
+}
+a .shop1 {
+    color: white;
+}
+.shop1:hover {
+    background-color: white;
+    color: rgb(30, 67, 41);
 }
