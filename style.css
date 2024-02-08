@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');  
 body{
     margin: 0;
@@ -156,12 +156,12 @@ a .shop {
 
 
 .home-made{
-    background: linear-gradient(-70deg,rgba(208,205,117,0.90) 50%,rgb(212, 228, 184) 50%);
+    background: linear-gradient(-80deg,rgba(208,205,117,0.90) 50%,rgb(212, 228, 184) 50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: auto;
+    overflow:inherit;
     height: 700px;
 }
 
@@ -182,7 +182,8 @@ a .shop {
     margin-top: 10px;
 }
 
-.home-text p{font-family: 'Quicksand', sans-serif;
+.home-text p{
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     word-spacing: 5px;
   
@@ -211,14 +212,13 @@ a .shop {
     border-radius: 20px;
     
 }
-
+/*Shop button start*/
 .shop1{
     padding: 7px 5px;
     background-color: rgb(44, 56, 34);
     border-radius: 100px;
     text-decoration: none;
-    transition: background-color 0.3s ease; 
-    
+    transition: background-color 0.3s ease;   
 }
 a .shop1 {
     color: white;
@@ -226,4 +226,163 @@ a .shop1 {
 .shop1:hover {
     background-color: white;
     color: rgb(30, 67, 41);
+}
+/*Shop button end*/
+
+.shop-collection{
+    background-color: aliceblue;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.shop-collection-text{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: 100;
+    width: 200px;
+    height: 200px;
+}
+.shop-collection .line{
+    height: 5px;
+    width: 130px;
+    border-radius: 50px;
+    background-color: rgb(63, 53, 53);
+    margin: 0 auto;   
+}
+
+/* .shop-collection-content{
+    display: flex;
+    margin-top: 15rem;
+    justify-content:left;
+} */
+/*  
+.shop-collection-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+ 
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),#00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+} */
+
+.shop-collection {
+    background-color: aliceblue;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
+    align-items: center; /* Center align content horizontally */
+    text-align: center; /* Center align text */
+}
+
+.shop-collection-text {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.shop-collection .line {
+    height: 5px;
+    width: 130px;
+    border-radius: 50px;
+    background-color: rgb(63, 53, 53);
+    margin: 0 auto;
+}
+
+.shop-collection-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem; /* Adjust as needed */
+    gap: 4rem;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px; /* Adjust as needed */
+}
+
+.row img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    border-radius: 40px;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #e7cf94);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.row:hover img {
+    transform: scale(1.1);
+}
+
+.row:hover .layer {
+    height: 100%;
 }
