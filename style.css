@@ -236,6 +236,7 @@ a .shop1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 100px;
 }
 .shop-collection-text{
     font-family: 'Nanum Myeongjo', serif;
@@ -252,73 +253,8 @@ a .shop1 {
     margin: 0 auto;   
 }
 
-/* .shop-collection-content{
-    display: flex;
-    margin-top: 15rem;
-    justify-content:left;
-} */
-/*  
-.shop-collection-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem;
-}
- 
-
-.row{
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.row img{
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#00a6ff);
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 40px;
-    transition: height 0.5s;
-}
-
-.layer i{
-    color: var(--main-color);
-    margin-top: 20px;
-    font-size: 20px;
-    background: var(--text-color);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-}
-
-.row:hover img{
-    transform: scale(1.1);
-}
-.row:hover .layer{
-    height: 100%;
-} */
-
 .shop-collection {
-    background-color: aliceblue;
+    background-color: rgb(211, 217, 222);
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -358,20 +294,26 @@ a .shop1 {
 }
 
 .row img {
-    width: 100%;
+    width: 400px;
     display: block;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease;
     border-radius: 40px;
+}
+
+.row h3{
+    color: #0d1f11;
+    font-size: 25px;
 }
 
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #e7cf94);
+    background: linear-gradient( rgba(239, 213, 148, 0.5 )
+    ,#e7cf94,rgba(0, 0, 0, 0.1) );
     position: absolute;
     border-radius: 8px;
     left: 0;
-    bottom: 0;
+    top: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -384,5 +326,37 @@ a .shop1 {
 }
 
 .row:hover .layer {
-    height: 100%;
+    height: 30%;
 }
+
+
+.our-mission{
+    background-color: rgba(208,205,117,1);
+    width: 100%;
+    padding: 25px;
+    padding-top: 5px;
+    text-align: center;
+    justify-content: center ;
+}
+
+.our-mission-text h1{
+    font-size: 50px;
+    color: #2f4326;
+}
+.our-mission-text p{
+    font-weight: 50;
+    font-size: 18px;
+    color: #222a1f;
+}
+
+
+.imgsa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.imgsa img {
+    border-radius: 100px;
+    margin-left: 80px;
+}
+
